@@ -74,7 +74,7 @@ p {
    ============================================ */
 .hero {
     background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);
-    padding: 5rem 2rem;
+    padding: 2.5rem 2rem;
     text-align: center;
     border-bottom: 2px solid var(--border-color);
 }
@@ -85,22 +85,38 @@ p {
 }
 
 .logo {
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.logo-image {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 8px rgba(0, 102, 204, 0.15));
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
 }
 
 .company-name {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--primary-blue);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
+    letter-spacing: -0.5px;
 }
 
 .tagline {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: var(--text-gray);
-    font-weight: 500;
+    font-weight: 400;
+    letter-spacing: 0.3px;
 }
 
 /* ============================================
@@ -231,7 +247,7 @@ section:last-of-type {
     }
 
     .hero {
-        padding: 3rem 1rem;
+        padding: 2rem 1rem;
     }
 
     .company-name {
@@ -276,9 +292,12 @@ section:last-of-type {
         padding: 2rem 1rem;
     }
 
-    .logo svg {
-        width: 40px;
-        height: 40px;
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    .logo-image {
+        max-width: 130px;
     }
 
     .company-name {
